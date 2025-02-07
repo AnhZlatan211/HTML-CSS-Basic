@@ -1,0 +1,261 @@
+
+#checkbox {
+    display:none;
+}
+#page1 #navi .bars {
+    margin: auto 0;
+    color:#004d00;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+#page1 #navi .menu-res {
+    position: absolute;
+    top:0;
+    left:-100%;
+    padding: 25px;
+    margin:0;
+    width:350px;
+    height:100%;
+    background-color:#e6e6e6;
+    transition: 0.5s;
+}
+#page1 #navi .menu-res li {
+    list-style-type: none;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #004d00;
+}
+#page1 #navi .menu-res li a {
+    text-decoration: none;
+    color:#004d00;
+    font-size: 20px;
+    font-weight: bold;
+}
+#page1 #navi .menu-res li a:hover {
+    color:#008000;
+}
+#page1 #navi .menu-res>li:first-child {
+    border-bottom: none;
+}
+#page1 #navi .menu-res li i {
+    float:right;
+    color:#004d00;
+    font-size: 30px;
+    cursor: pointer;
+}
+#page1 #navi .menu-res>li:nth-child(4) {
+    border-bottom: none;
+    margin-bottom: 25px;
+    padding-bottom: 0;
+}
+#page1 #navi .menu-res li .subtree-res {
+    padding-top:20px;
+}
+#page1 #navi .overlay {
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color: rgb(0, 0, 0, 0.3);
+    transition:0.9s;
+    display:none;
+}
+#page3-res {
+    background-image: url(Pro2-images/pexels-quang-nguyen-vinh-2132227.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: none;
+    padding:25px;
+}
+#page3-res .content3 h1 {
+    margin: 0 auto;
+    width:50%;
+    padding: 25px;
+    text-align: center; 
+    font-weight: bold;
+    border-radius: 100px;
+    font-size: 35px;
+    color:#004d00;
+    background-color: #e6ffe6;
+}
+#page3-res .content3 p {
+    background-color: #282A35;
+    border-radius: 100px;
+    padding:30px;
+    width:85%;
+    color:#e6e6e6;
+    margin: 0 auto;
+    margin-top:25px;
+}
+#page4-res {
+    background-image: url(Pro2-images/pexels-alex-conchillos-3826588.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding:30px;
+    display: none;
+}
+#page4-res .content4 h1 {
+    margin: 0 auto;
+    width:50%;
+    text-align: center;
+    padding: 25px;
+    font-weight: bold;
+    border-radius: 100px;
+    font-size: 35px;
+    color:#282A35;
+    background-color:#e6ffe6 ;
+}
+#page4-res .content4 p {
+    background-color: #e6e6e6;
+    border-radius: 100px;
+    padding:30px;
+    color:#282A35;
+    width:85%;
+    margin: 0 auto;
+    margin-top:25px;
+}
+#page5-res {
+    background-image: url(Pro2-images/pexels-sandeep-singh-5856066.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -100px;
+    padding:30px;
+    display: none;
+}
+#page5-res .content5 h1 {
+    margin: 0 auto;
+    width:50%;
+    text-align: center;
+    padding: 25px;
+    font-weight: bold;
+    border-radius: 100px;
+    font-size: 35px;
+    color:#004d00;
+    background-color: #e6ffe6;
+}
+#page5-res .content5 p {
+    background-color: #282A35;
+    border-radius: 100px;
+    padding:30px;
+    color:#e6e6e6;
+    width:85%;
+    margin:0 auto;
+    margin-top:25px;
+}
+
+/*Tablet*/
+@media  screen and (max-width:1275px) {
+    #page1 #navi .right {
+        display:none;
+    }
+}
+@media screen and (max-width:1234px) {
+    #page2 #container {
+        flex-wrap: wrap;
+        padding-bottom: 75px;
+    }
+    #page2 #container .card {
+        width:40%;
+    }
+    #page3, #page4, #page5 {
+        display: none;
+    }
+    #page3-res, #page4-res, #page5-res {
+        display: block;
+    }
+    #page6 .content6 {
+        flex-direction: column;
+    }
+    #page6 .content6 .meaning {
+        margin: 0 auto;
+        width:85%;
+        margin-bottom: 60px;
+    }
+    #page7 {
+        flex-direction: column-reverse;
+    }
+}
+@media screen and (max-width:1115px){
+    #page1 #navi .menu {
+        display:none;
+    }
+    #page1 #navi .bars {
+        display:block;
+    }
+    #page1 #navi #checkbox:checked~.menu-res {
+        left:0%;
+    }
+    #page1 #navi #checkbox:checked~.overlay {
+        display:block;
+    }
+}
+
+/*Mobile*/
+@media screen and (max-width:685px) {
+    #page2 #container {
+        flex-direction: column;
+    }
+    #page2 #container .card:nth-child(even) {
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+    #page2 #container .card:nth-child(odd) {
+        margin-bottom: 30px;
+    }
+    #page2 #container .card:last-child {
+        margin-bottom: 0;
+    }
+    #page2 #container .card {
+        width:75%;
+        margin: 0;
+    }
+    #page3, #page4, #page5 {
+        display: none;
+    }
+    #page3-res, #page4-res, #page5-res {
+        display: block;
+    }
+    #page3-res .content3 h1 {
+        width:80%;
+    }
+    #page3-res .content3 p {
+        border-radius: 50px;
+        width:95%;
+    }
+    #page4-res .content4 h1 {
+        width:80%;
+    }
+    #page4-res .content4 p {
+        border-radius: 50px;
+        width:95%;
+    }
+    #page5-res .content5 h1 {
+        width:80%;
+    }
+    #page5-res .content5 p {
+        border-radius: 50px;
+        width:95%;
+    }
+    #page5-res {
+        background-position-y: 0;
+    }
+    #page6 .content6 {
+        flex-direction: column;
+    }
+    #page6 .content6 .meaning {
+        width: 95%;;
+        margin-bottom: 30px;
+    }
+    #page6 .content6 .meaning p {
+        margin: 0 auto;
+        border-radius: 60px;
+    }
+    #page6 .content6 .meaning>img {
+        display: none;
+    }
+    #page7 .contact .icon .row i {
+        margin: 0 25px;
+    }
+}

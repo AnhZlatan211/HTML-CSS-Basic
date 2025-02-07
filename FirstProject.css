@@ -1,0 +1,419 @@
+* {
+    box-sizing: border-box;
+
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: cursive;
+    margin:0;
+}
+#page1 {
+    background-image: url(Pro2-images/pexels-ylanite-koppens-776656.jpg);
+    background-size: cover;
+    height:750px;
+    background-position-y: -150px;
+    background-position: center;
+}
+#navi {
+    max-width: 85%;
+    display: flex;
+    justify-content: space-between;
+    margin:0 auto;
+}
+#navi .left {
+    display: flex;
+    align-items: center;
+}
+#navi .left h1{
+    font-size: 55px;
+    color: #008000;
+    margin-right:15px;
+    cursor: pointer;
+}
+#navi .left i {
+    font-size: 50px;
+    color: #008000;
+}
+#navi .menu {
+    display: flex;
+    align-items: center;
+    padding-left: 180px;
+}
+#navi .menu li {
+    list-style-type: none;
+    padding:0px 15px;
+    position: relative;
+}
+#navi .menu li a {
+    text-decoration: none;
+    font-size: 21px;
+    color: #004d00;
+    font-weight: bold;
+}
+#navi .menu li a:hover {
+    color: #008000;
+}
+#navi .menu li .subtree{
+    position: absolute;
+    width: 175px;
+    padding: 0;
+    display: none;
+}
+#navi .menu li .subtree li{
+    padding: 5px 0px;
+    border-bottom: 1px solid #004d00;
+}
+#navi .menu li .subtree li:first-child {
+    padding-top: 10px;
+}
+#navi .menu li .subtree li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #004d00;
+    font-weight: bold;
+}
+#navi .menu li .subtree li a:hover {
+    color: #008000;
+}
+#navi .menu li:hover .subtree {
+    display: block;
+}
+#navi .right {
+    display: flex;
+    align-items: center;
+}
+#navi .right a{
+    color:#e6e6e6;
+    background-color: #004d00;
+    padding:10px 17px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+    transition: .3s;
+}
+#navi .right a:hover{
+    transform: scale(1.2);
+}
+#page2 {
+    background-color: #282A35;
+    display: flex;
+    flex-direction: column;
+}
+#page2 .head {
+    color: #e6fff3;
+    text-align: center ;
+    margin-bottom: 40px;
+}
+#page2 .head h1{
+    font-size: 50px;
+    font-weight: bold;
+    padding: 25px 0 10px 0;
+}
+#page2 .head p{
+    font-size: 15px;
+    width:70%;
+    margin:0 auto;
+}
+#page2 #container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+}
+#page2 #container .card {
+    background-color: #f2f2f2;
+    border-radius: 50px;
+    padding:20px; 
+    text-align: center;
+    margin-right: 30px;
+    width:20%;
+    height: 80%;
+}
+#page2 #container .card i {
+    font-size: 40px;
+    color:#008000;
+}
+#page2 #container .card h2 {
+    color:#004d00;
+    margin:3px;
+}
+#page2 #container .card p {
+    color: #282A35;
+    margin-bottom:25px;
+}
+#page2 #container .card a {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #004d00;
+    padding:10px 17px;
+    border-radius: 50px;
+    color: #f2f2f2;
+    border: 3px solid transparent;
+    transition: .2s;
+}
+#page2 #container .card a:hover {
+    background-color: #f2f2f2;
+    border: 3px solid #004d00;
+    color: #004d00;
+}
+#page2 #container .card:last-child {
+    margin-right: 0;
+}
+#page2 #container .card:nth-child(even) {
+    margin-top: 60px;
+}
+#page2 #container .card:nth-child(odd) {
+    margin-bottom: 60px;
+}
+#page3 {
+    background-color: #e6ffe6;
+    display: flex;
+}
+#page3 .content3 {
+    flex: 1;
+}
+#page3 .content3 h1 {
+    margin: 0;
+    padding: 50px 50px 30px 100px;
+    font-weight: bold;
+    font-size: 35px;
+    color:#004d00;
+}
+#page3 .content3 p {
+    background-color: #282A35;
+    border-radius: 100px;
+    padding:30px;
+    width:85%;
+    margin:0 auto;
+    margin-top:20px;
+    color:#e6e6e6;
+}
+#page3 .images3 {
+    flex: 1;
+    height: 750px;
+    background-image: url(Pro2-images/pexels-quang-nguyen-vinh-2132227.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#page4 {
+    background-color:#282A35;
+    display: flex;
+}
+#page4 .content4 {
+    flex: 1;
+}
+#page4 .content4 h1 {
+    margin: 0;
+    padding: 50px 50px 30px 300px;
+    font-weight: bold;
+    font-size: 35px;
+    color:#e6ffe6;
+}
+#page4 .content4 p {
+    background-color: #e6e6e6;
+    border-radius: 100px;
+    padding:30px;
+    color:#282A35;
+    width:85%;
+    margin:0 auto;
+    margin-top:20px;
+}
+#page4 .images4 {
+    flex: 1;
+    height: 750px;
+    background-image: url(Pro2-images/pexels-alex-conchillos-3826588.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#page5 {
+    background-color:  #e6fff3;
+    display: flex;
+}
+#page5 .content5 {
+    flex: 1;
+}
+#page5 .content5 h1 {
+    margin: 0;
+    padding: 50px 50px 20px 100px;
+    font-weight: bold;
+    font-size: 35px;
+    color:#004d00;
+}
+#page5 .content5 p {
+    background-color: #282A35;
+    border-radius: 100px;
+    padding:30px;
+    width:85%;
+    color:#e6e6e6;
+    margin:0 auto;
+    margin-top:20px;
+}
+#page5 .images5 {
+    flex: 1;
+    height: 750px;
+    background-image: url(Pro2-images/pexels-sandeep-singh-5856066.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-position-y: -100px;
+}
+#page6 {
+    background-color: #ffff99;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+#page6 .head {
+    text-align: center;
+    color:#004d00;
+}
+#page6 .head h2{
+    font-size: 50px;
+    font-weight: bold;
+    margin: 0;
+    padding-top: 50px;
+    padding-bottom: 25px;
+}
+#page6 .head p{
+    font-size: 15px;
+    font-weight: bold;
+    margin:10px auto;
+    width:75%;
+}
+#page6 .content6 {
+    display: flex;
+    margin-top:50px;
+}
+#page6 .content6 .contentleft{
+    flex: 1;
+}
+#page6 .content6 .contentright{
+    flex: 1;
+}
+#page6 .content6 .meaning {
+    display: flex;
+    margin-bottom: 60px;
+    padding:0 30px;
+}
+#page6 .content6 .meaning p {
+    color:#e6e6e6;
+    background:#282A35;
+    border-radius: 1000px;
+    text-align: center;
+    padding: 20px;
+}
+#page7 {
+    background-color: #282A35;
+    padding-bottom: 20px;
+    display: flex;
+}
+#page7 .contact{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+}
+#page7 .contact .avatar {
+    flex: 1;
+    background-image: url("Pro2-images/profile\ .png");
+    background-size: cover;
+    background-repeat: none;
+    background-position-x: -10px;
+}
+#page7 .contact .icon {
+    flex: 1;
+}
+#page7 .contact .icon .row {
+    display: flex;
+    align-items: center;
+    margin: 15px 0 10px 0;
+}
+#page7 .contact .icon .row i {
+    color:#282A35;
+    background-color:#e6e6e6;
+    padding:10px;
+    border-radius: 100px;
+    margin: 0 50px 0 100px ;
+    transition: 0.1s;
+}
+#page7 .contact .icon .row i:hover{
+    transform: scale(1.3);
+    cursor: pointer;
+}
+#page7 .contact .icon .row p {
+    color:#e6e6e6
+}
+#page7 .subscribe {
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#page7 .subscribe .head a{
+    text-decoration: none;
+    display: inline-block;
+    margin: 50px 0 30px 0;
+    background-color:#e6e6e6;
+    color:#282A35;
+    padding:15px;
+    border-radius: 50px;
+    font-size: 25px;
+    font-weight: bold;
+    border: 3px solid transparent;
+    transition: 0.2s;
+}
+#page7 .subscribe .head a:hover {
+    border: 3px solid #e6e6e6;
+    background-color: #282A35;
+    color:#e6e6e6;
+}
+#page7 .subscribe form {
+    background-color:#f2f2f2;
+    border-radius: 7px;
+    padding:20px;
+    width:90%;
+}
+#page7 .subscribe form .row {
+    display: flex;
+    margin-bottom:20px;
+}
+#page7 .subscribe form .row:last-child{
+    margin-bottom:0 ;
+    justify-content: end;
+}
+#page7 .subscribe form .row .col25 {
+    flex: 3;
+}
+#page7 .subscribe form .row .col75 {
+    flex:7;
+}
+#page7 .subscribe form .row .col25 label {
+    color:#282A35;
+    font-weight: bold;
+}
+#page7 .subscribe form .row .col75 input,select,textarea {
+    width:100%;
+    padding:10px;
+    border-radius: 5px;
+    border: 1px solid #b3b3b3;
+}
+#page7 .subscribe form .row a {
+    text-decoration: none;
+    color:#e6e6e6;
+    background-color: #004d00;
+    padding: 10px 15px;
+    border-radius: 25px;
+    border: 3px solid transparent;
+    transition: 0.1s;
+    font-weight: bold;
+}
+#page7 .subscribe form .row a:hover {
+    border: 3px solid #004d00;
+    background-color: #e6e6e6;
+    color:#004d00;
+}
+
